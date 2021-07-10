@@ -1,0 +1,1795 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Cartzilla | Tables
+    </title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="Cartzilla - Bootstrap E-commerce Template">
+    <meta name="keywords" content="bootstrap, shop, e-commerce, market, modern, responsive,  business, mobile, bootstrap 4, html5, css3, jquery, js, gallery, slider, touch, creative, clean">
+    <meta name="author" content="Createx Studio">
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon and Touch Icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
+    <link rel="mask-icon" color="#fe6a6a" href="../safari-pinned-tab.svg">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Vendor Styles including: Font Icons, Plugins, etc.-->
+    <link rel="stylesheet" media="screen" href="../vendor/simplebar/dist/simplebar.min.css"/>
+    <link rel="stylesheet" media="screen" href="../vendor/tiny-slider/dist/tiny-slider.css"/>
+    <link rel="stylesheet" media="screen" href="../vendor/prismjs/themes/prism.css"/>
+    <link rel="stylesheet" media="screen" href="../vendor/prismjs/plugins/toolbar/prism-toolbar.css"/>
+    <link rel="stylesheet" media="screen" href="../vendor/prismjs/plugins/line-numbers/prism-line-numbers.css"/>
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="../css/theme.min.css">
+  </head>
+  <!-- Body-->
+  <body>
+    <main class="container-fluid">
+      <!-- Main content-->
+      <section class="sidenav-enabled row pb-3 pb-md-4">
+        <div class="col-xl-9">
+          <!-- Navbar-->
+          <header class="navbar navbar-docs navbar-expand navbar-light fixed-top bg-light box-shadow-sm px-3 px-lg-4" data-scroll-header><a class="navbar-brand d-lg-none mr-auto" href="typography.html" style="min-width: 7rem;"><img width="142" src="../img/logo-dark.png" alt="Cartzilla"/></a>
+            <ul class="navbar-nav ml-auto d-none d-lg-flex">
+              <li class="nav-item"><a class="nav-link" href="../index.html"><i class="czi-eye align-middle mt-n1 mr-2"></i>Live preview</a></li>
+              <li class="nav-item">
+                <div class="nav-link disabled text-border px-1">|</div>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="../docs/dev-setup.html"><i class="czi-book align-middle mt-n1 mr-2"></i>Documentation</a></li>
+              <li class="nav-item">
+                <div class="nav-link disabled text-border px-1">|</div>
+              </li>
+            </ul>
+            <button class="navbar-toggler d-block d-lg-none" type="button" data-toggle="collapse" data-target="#components-nav"><span class="navbar-toggler-icon"></span></button><a class="btn btn-primary btn-shadow ml-2 ml-lg-4" href="https://themes.getbootstrap.com/product/cartzilla-bootstrap-e-commerce-template-ui-kit/" target="_blank" rel="noopener"><i class="czi-cart mr-1 d-none d-sm-inline-block"></i>Buy now</a>
+          </header>
+          <!-- Side navigation-->
+          <aside class="sidenav collapse bg-dark" id="components-nav">
+            <header class="sidenav-header bg-darker d-none d-lg-block"><a class="navbar-brand" href="typography.html" style="min-width: 7rem;"><img width="142" src="../img/logo-light.png" alt="Cartzilla"/></a><span class="badge badge-info">Components</span></header>
+            <div class="sidenav-body" data-simplebar data-simplebar-auto-hide="true">
+              <div class="pt-4 pb-3 mt-3">
+                <div class="d-flex d-lg-none pb-4 mb-4 border-bottom border-light">
+                  <div class="w-50 pr-2"><a class="btn btn-outline-light btn-block" href="../index.html"><i class="czi-eye align-middle mt-n1 mr-2"></i>Live demo</a></div>
+                  <div class="w-50 pl-2"><a class="btn btn-light btn-block" href="../docs/dev-setup.html"><i class="czi-book align-middle mt-n1 mr-2"></i>Docs</a></div>
+                </div>
+                <div class="widget widget-links widget-light mb-4 pb-2">
+                  <h3 class="widget-title text-white">Content</h3>
+                  <ul class="widget-list">
+                    <li class="widget-list-item"><a class="widget-list-link" href="typography.html">Typography</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="icon-font.html">Icon font</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="code.html">Code</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="images.html">Images &amp; figures</a></li>
+                    <li class="widget-list-item active"><a class="widget-list-link" href="tables.html">Tables</a></li>
+                  </ul>
+                </div>
+                <div class="widget widget-links widget-light mb-4 pb-2">
+                  <h3 class="widget-title text-white">Components</h3>
+                  <ul class="widget-list">
+                    <li class="widget-list-item"><a class="widget-list-link" href="alerts.html">Alerts</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="badge.html">Badges</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="blog-components.html">Blog components</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="breadcrumb.html">Breadcrumb</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="buttons.html">Buttons</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="button-group.html">Button group</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="cards.html">Cards</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="carousel.html">Carousel</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="charts.html">Charts</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="collapse.html">Collapse</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="contacts-card.html">Contacts card</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="countdown.html">Countdown</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="dropdowns.html">Dropdowns</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="footer.html">Footer</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="forms.html">Forms</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="gallery.html">Gallery</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="input-group.html">Input group</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="jumbotron.html">Jumbotron</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="list-group.html">List group</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="media-object.html">Media object</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="modal.html">Modal</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="navbar.html">Navbar</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="pagination.html">Pagination</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="pills.html">Pills</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="popovers.html">Popovers</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="progress.html">Progress</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="shop-components.html">Shop components</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="social-buttons.html">Social buttons</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="spinners.html">Spinners</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="steps.html">Steps</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="tabs.html">Tabs</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="team.html">Team</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="testimonials.html">Testimonials / reviews</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="toasts.html">Toasts</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="tooltips.html">Tooltips</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="video-popup.html">Video popup</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="widgets.html">Widgets</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </aside>
+          <!-- Page title-->
+          <div class="border-bottom mt-lg-2 pt-5 pb-2 mb-5">
+            <h1 class="mt-lg-4 pt-lg-5">Tables</h1>
+            <div class="d-flex flex-wrap flex-md-nowrap justify-content-between">
+              <p class="text-muted">Examples for opt-in styling of tables.</p>
+              <p class="font-size-sm pl-md-4"><a class="text-nowrap" href="https://getbootstrap.com/docs/4.5/content/tables/" target="_blank" rel="noopener">Bootstrap docs<i class="czi-arrow-right align-middle ml-1"></i></a></p>
+            </div>
+          </div>
+          <!-- Basic example-->
+          <section class="pb-5 mb-md-2" id="tables-basic">
+            <h2 class="h5 mb-3">Basic example</h2>
+            <div class="card border-0 box-shadow">
+              <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs" role="tablist">
+                  <li class="nav-item"><a class="nav-link active" href="#result1" data-toggle="tab" role="tab" aria-controls="result1" aria-selected="true">Result</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#html1" data-toggle="tab" role="tab" aria-controls="html1" aria-selected="false">HTML</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#pug1" data-toggle="tab" role="tab" aria-controls="pug1" aria-selected="false">Pug</a></li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <div class="tab-content">
+                  <div class="tab-pane fade show active" id="result1" role="tabpanel">
+                    <div class="table-responsive">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th>#</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Position</th>
+                            <th>Phone</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>John</td>
+                            <td>Doe</td>
+                            <td>CEO, Founder</td>
+                            <td>+3 555 68 70</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Anna</td>
+                            <td>Cabana</td>
+                            <td>Designer</td>
+                            <td>+3 434 65 93</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Kale</td>
+                            <td>Thornton</td>
+                            <td>Developer</td>
+                            <td>+3 285 42 88</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">4</th>
+                            <td>Jane</td>
+                            <td>Birkins</td>
+                            <td>Support</td>
+                            <td>+3 774 28 50</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="html1" role="tabpanel">
+                    <pre class="line-numbers"><code class="lang-html">&lt;!-- Basic table --&gt;
+&lt;div class=&quot;table-responsive&quot;&gt;
+  &lt;table class=&quot;table&quot;&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;#&lt;/th&gt;
+        &lt;th&gt;First Name&lt;/th&gt;
+        &lt;th&gt;Last Name&lt;/th&gt;
+        &lt;th&gt;Position&lt;/th&gt;
+        &lt;th&gt;Phone&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
+        &lt;td&gt;John&lt;/td&gt;
+        &lt;td&gt;Doe&lt;/td&gt;
+        &lt;td&gt;CEO, Founder&lt;/td&gt;
+        &lt;td&gt;+3 555 68 70&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;2&lt;/th&gt;
+        &lt;td&gt;Anna&lt;/td&gt;
+        &lt;td&gt;Cabana&lt;/td&gt;
+        &lt;td&gt;Designer&lt;/td&gt;
+        &lt;td&gt;+3 434 65 93&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;3&lt;/th&gt;
+        &lt;td&gt;Kale&lt;/td&gt;
+        &lt;td&gt;Thornton&lt;/td&gt;
+        &lt;td&gt;Developer&lt;/td&gt;
+        &lt;td&gt;+3 285 42 88&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;4&lt;/th&gt;
+        &lt;td&gt;Jane&lt;/td&gt;
+        &lt;td&gt;Birkins&lt;/td&gt;
+        &lt;td&gt;Support&lt;/td&gt;
+        &lt;td&gt;+3 774 28 50&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/div&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="pug1" role="tabpanel">
+                    <pre class="line-numbers"><code class="lang-pug">// Basic table
+.table-responsive
+  table.table
+    thead
+      tr
+        th #
+        th First Name
+        th Last Name
+        th Position
+        th Phone
+    tbody
+      tr
+        th(scope=&quot;row&quot;) 1
+        td John
+        td Doe
+        td CEO, Founder
+        td +3 555 68 70
+      tr
+        th(scope=&quot;row&quot;) 2
+        td Anna
+        td Cabana
+        td Designer
+        td +3 434 65 93
+      tr
+        th(scope=&quot;row&quot;) 3
+        td Kale
+        td Thornton
+        td Developer
+        td +3 285 42 88
+      tr
+        th(scope=&quot;row&quot;) 4
+        td Jane
+        td Birkins
+        td Support
+        td +3 774 28 50
+</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Dark table-->
+          <section class="pb-5 mb-md-2" id="tables-dark">
+            <h2 class="h5 mb-3">Dark table</h2>
+            <div class="card border-0 box-shadow">
+              <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs" role="tablist">
+                  <li class="nav-item"><a class="nav-link active" href="#result2" data-toggle="tab" role="tab" aria-controls="result2" aria-selected="true">Result</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#html2" data-toggle="tab" role="tab" aria-controls="html2" aria-selected="false">HTML</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#pug2" data-toggle="tab" role="tab" aria-controls="pug2" aria-selected="false">Pug</a></li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <div class="tab-content">
+                  <div class="tab-pane fade show active" id="result2" role="tabpanel">
+                    <div class="table-responsive">
+                      <table class="table table-dark">
+                        <thead>
+                          <tr>
+                            <th>#</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Position</th>
+                            <th>Phone</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>John</td>
+                            <td>Doe</td>
+                            <td>CEO, Founder</td>
+                            <td>+3 555 68 70</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Anna</td>
+                            <td>Cabana</td>
+                            <td>Designer</td>
+                            <td>+3 434 65 93</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Kale</td>
+                            <td>Thornton</td>
+                            <td>Developer</td>
+                            <td>+3 285 42 88</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">4</th>
+                            <td>Jane</td>
+                            <td>Birkins</td>
+                            <td>Support</td>
+                            <td>+3 774 28 50</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="html2" role="tabpanel">
+                    <pre class="line-numbers"><code class="lang-html">&lt;!-- Dark table --&gt;
+&lt;div class=&quot;table-responsive&quot;&gt;
+  &lt;table class=&quot;table table-dark&quot;&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;#&lt;/th&gt;
+        &lt;th&gt;First Name&lt;/th&gt;
+        &lt;th&gt;Last Name&lt;/th&gt;
+        &lt;th&gt;Position&lt;/th&gt;
+        &lt;th&gt;Phone&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
+        &lt;td&gt;John&lt;/td&gt;
+        &lt;td&gt;Doe&lt;/td&gt;
+        &lt;td&gt;CEO, Founder&lt;/td&gt;
+        &lt;td&gt;+3 555 68 70&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;2&lt;/th&gt;
+        &lt;td&gt;Anna&lt;/td&gt;
+        &lt;td&gt;Cabana&lt;/td&gt;
+        &lt;td&gt;Designer&lt;/td&gt;
+        &lt;td&gt;+3 434 65 93&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;3&lt;/th&gt;
+        &lt;td&gt;Kale&lt;/td&gt;
+        &lt;td&gt;Thornton&lt;/td&gt;
+        &lt;td&gt;Developer&lt;/td&gt;
+        &lt;td&gt;+3 285 42 88&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;4&lt;/th&gt;
+        &lt;td&gt;Jane&lt;/td&gt;
+        &lt;td&gt;Birkins&lt;/td&gt;
+        &lt;td&gt;Support&lt;/td&gt;
+        &lt;td&gt;+3 774 28 50&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/div&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="pug2" role="tabpanel">
+                    <pre class="line-numbers"><code class="lang-pug">// Dark table
+.table-responsive
+  table.table.table-dark
+    thead
+      tr
+        th #
+        th First Name
+        th Last Name
+        th Position
+        th Phone
+    tbody
+      tr
+        th(scope=&quot;row&quot;) 1
+        td John
+        td Doe
+        td CEO, Founder
+        td +3 555 68 70
+      tr
+        th(scope=&quot;row&quot;) 2
+        td Anna
+        td Cabana
+        td Designer
+        td +3 434 65 93
+      tr
+        th(scope=&quot;row&quot;) 3
+        td Kale
+        td Thornton
+        td Developer
+        td +3 285 42 88
+      tr
+        th(scope=&quot;row&quot;) 4
+        td Jane
+        td Birkins
+        td Support
+        td +3 774 28 50
+</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Table head options-->
+          <section class="pb-5 mb-md-2" id="tables-head-options">
+            <h2 class="h5 mb-3">Table head options</h2>
+            <div class="card border-0 box-shadow">
+              <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs" role="tablist">
+                  <li class="nav-item"><a class="nav-link active" href="#result3" data-toggle="tab" role="tab" aria-controls="result3" aria-selected="true">Result</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#html3" data-toggle="tab" role="tab" aria-controls="html3" aria-selected="false">HTML</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#pug3" data-toggle="tab" role="tab" aria-controls="pug3" aria-selected="false">Pug</a></li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <div class="tab-content">
+                  <div class="tab-pane fade show active" id="result3" role="tabpanel">
+                    <div class="table-responsive mb-3">
+                      <table class="table">
+                        <thead class="thead-dark">
+                          <tr>
+                            <th>#</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Position</th>
+                            <th>Phone</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>John</td>
+                            <td>Doe</td>
+                            <td>CEO, Founder</td>
+                            <td>+3 555 68 70</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Anna</td>
+                            <td>Cabana</td>
+                            <td>Designer</td>
+                            <td>+3 434 65 93</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Kale</td>
+                            <td>Thornton</td>
+                            <td>Developer</td>
+                            <td>+3 285 42 88</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="table-responsive">
+                      <table class="table">
+                        <thead class="thead-light">
+                          <tr>
+                            <th>#</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Position</th>
+                            <th>Phone</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>John</td>
+                            <td>Doe</td>
+                            <td>CEO, Founder</td>
+                            <td>+3 555 68 70</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Anna</td>
+                            <td>Cabana</td>
+                            <td>Designer</td>
+                            <td>+3 434 65 93</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Kale</td>
+                            <td>Thornton</td>
+                            <td>Developer</td>
+                            <td>+3 285 42 88</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="html3" role="tabpanel">
+                    <pre class="line-numbers"><code class="lang-html"><strong>&lt;!-- Dark table head --&gt;</strong>
+&lt;div class=&quot;table-responsive&quot;&gt;
+  &lt;table class=&quot;table&quot;&gt;
+    &lt;thead class=&quot;thead-dark&quot;&gt;
+      &lt;tr&gt;
+        &lt;th&gt;#&lt;/th&gt;
+        &lt;th&gt;First Name&lt;/th&gt;
+        &lt;th&gt;Last Name&lt;/th&gt;
+        &lt;th&gt;Position&lt;/th&gt;
+        &lt;th&gt;Phone&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
+        &lt;td&gt;John&lt;/td&gt;
+        &lt;td&gt;Doe&lt;/td&gt;
+        &lt;td&gt;CEO, Founder&lt;/td&gt;
+        &lt;td&gt;+3 555 68 70&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;2&lt;/th&gt;
+        &lt;td&gt;Anna&lt;/td&gt;
+        &lt;td&gt;Cabana&lt;/td&gt;
+        &lt;td&gt;Designer&lt;/td&gt;
+        &lt;td&gt;+3 434 65 93&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;3&lt;/th&gt;
+        &lt;td&gt;Kale&lt;/td&gt;
+        &lt;td&gt;Thornton&lt;/td&gt;
+        &lt;td&gt;Developer&lt;/td&gt;
+        &lt;td&gt;+3 285 42 88&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/div&gt;
+
+&lt;!-- Light table head --&gt;
+&lt;div class=&quot;table-responsive&quot;&gt;
+  &lt;table class=&quot;table&quot;&gt;
+    &lt;thead class=&quot;thead-light&quot;&gt;
+      &lt;tr&gt;
+        &lt;th&gt;#&lt;/th&gt;
+        &lt;th&gt;First Name&lt;/th&gt;
+        &lt;th&gt;Last Name&lt;/th&gt;
+        &lt;th&gt;Position&lt;/th&gt;
+        &lt;th&gt;Phone&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
+        &lt;td&gt;John&lt;/td&gt;
+        &lt;td&gt;Doe&lt;/td&gt;
+        &lt;td&gt;CEO, Founder&lt;/td&gt;
+        &lt;td&gt;+3 555 68 70&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;2&lt;/th&gt;
+        &lt;td&gt;Anna&lt;/td&gt;
+        &lt;td&gt;Cabana&lt;/td&gt;
+        &lt;td&gt;Designer&lt;/td&gt;
+        &lt;td&gt;+3 434 65 93&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;3&lt;/th&gt;
+        &lt;td&gt;Kale&lt;/td&gt;
+        &lt;td&gt;Thornton&lt;/td&gt;
+        &lt;td&gt;Developer&lt;/td&gt;
+        &lt;td&gt;+3 285 42 88&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/div&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="pug3" role="tabpanel">
+                    <pre class="line-numbers"><code class="lang-pug">// Dark table head
+.table-responsive
+  table.table
+    thead.thead-dark
+      tr
+        th #
+        th First Name
+        th Last Name
+        th Position
+        th Phone
+    tbody
+      tr
+        th(scope=&quot;row&quot;) 1
+        td John
+        td Doe
+        td CEO, Founder
+        td +3 555 68 70
+      tr
+        th(scope=&quot;row&quot;) 2
+        td Anna
+        td Cabana
+        td Designer
+        td +3 434 65 93
+      tr
+        th(scope=&quot;row&quot;) 3
+        td Kale
+        td Thornton
+        td Developer
+        td +3 285 42 88
+
+// Light table head
+.table-responsive
+  table.table
+    thead.thead-light
+      tr
+        th #
+        th First Name
+        th Last Name
+        th Position
+        th Phone
+    tbody
+      tr
+        th(scope=&quot;row&quot;) 1
+        td John
+        td Doe
+        td CEO, Founder
+        td +3 555 68 70
+      tr
+        th(scope=&quot;row&quot;) 2
+        td Anna
+        td Cabana
+        td Designer
+        td +3 434 65 93
+      tr
+        th(scope=&quot;row&quot;) 3
+        td Kale
+        td Thornton
+        td Developer
+        td +3 285 42 88
+</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Striped rows-->
+          <section class="pb-5 mb-md-2" id="tables-striped-rows">
+            <h2 class="h5 mb-3">Striped rows</h2>
+            <div class="card border-0 box-shadow">
+              <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs" role="tablist">
+                  <li class="nav-item"><a class="nav-link active" href="#result4" data-toggle="tab" role="tab" aria-controls="result4" aria-selected="true">Result</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#html4" data-toggle="tab" role="tab" aria-controls="html4" aria-selected="false">HTML</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#pug4" data-toggle="tab" role="tab" aria-controls="pug4" aria-selected="false">Pug</a></li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <div class="tab-content">
+                  <div class="tab-pane fade show active" id="result4" role="tabpanel">
+                    <div class="table-responsive mb-3">
+                      <table class="table table-striped">
+                        <thead>
+                          <tr>
+                            <th>#</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Position</th>
+                            <th>Phone</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>John</td>
+                            <td>Doe</td>
+                            <td>CEO, Founder</td>
+                            <td>+3 555 68 70</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Anna</td>
+                            <td>Cabana</td>
+                            <td>Designer</td>
+                            <td>+3 434 65 93</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Kale</td>
+                            <td>Thornton</td>
+                            <td>Developer</td>
+                            <td>+3 285 42 88</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="table-responsive">
+                      <table class="table table-dark table-striped">
+                        <thead>
+                          <tr>
+                            <th>#</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Position</th>
+                            <th>Phone</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>John</td>
+                            <td>Doe</td>
+                            <td>CEO, Founder</td>
+                            <td>+3 555 68 70</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Anna</td>
+                            <td>Cabana</td>
+                            <td>Designer</td>
+                            <td>+3 434 65 93</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Kale</td>
+                            <td>Thornton</td>
+                            <td>Developer</td>
+                            <td>+3 285 42 88</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="html4" role="tabpanel">
+                    <pre class="line-numbers"><code class="lang-html">&lt;!-- Light table with striped rows --&gt;
+&lt;div class=&quot;table-responsive&quot;&gt;
+  &lt;table class=&quot;table table-striped&quot;&gt;
+    &lt;thead;&gt;
+      &lt;tr&gt;
+        &lt;th&gt;#&lt;/th&gt;
+        &lt;th&gt;First Name&lt;/th&gt;
+        &lt;th&gt;Last Name&lt;/th&gt;
+        &lt;th&gt;Position&lt;/th&gt;
+        &lt;th&gt;Phone&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
+        &lt;td&gt;John&lt;/td&gt;
+        &lt;td&gt;Doe&lt;/td&gt;
+        &lt;td&gt;CEO, Founder&lt;/td&gt;
+        &lt;td&gt;+3 555 68 70&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;2&lt;/th&gt;
+        &lt;td&gt;Anna&lt;/td&gt;
+        &lt;td&gt;Cabana&lt;/td&gt;
+        &lt;td&gt;Designer&lt;/td&gt;
+        &lt;td&gt;+3 434 65 93&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;3&lt;/th&gt;
+        &lt;td&gt;Kale&lt;/td&gt;
+        &lt;td&gt;Thornton&lt;/td&gt;
+        &lt;td&gt;Developer&lt;/td&gt;
+        &lt;td&gt;+3 285 42 88&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/div&gt;
+
+&lt;!-- Dark table with striped rows --&gt;
+&lt;div class=&quot;table-responsive&quot;&gt;
+  &lt;table class=&quot;table table-dark table-striped&quot;&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;#&lt;/th&gt;
+        &lt;th&gt;First Name&lt;/th&gt;
+        &lt;th&gt;Last Name&lt;/th&gt;
+        &lt;th&gt;Position&lt;/th&gt;
+        &lt;th&gt;Phone&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
+        &lt;td&gt;John&lt;/td&gt;
+        &lt;td&gt;Doe&lt;/td&gt;
+        &lt;td&gt;CEO, Founder&lt;/td&gt;
+        &lt;td&gt;+3 555 68 70&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;2&lt;/th&gt;
+        &lt;td&gt;Anna&lt;/td&gt;
+        &lt;td&gt;Cabana&lt;/td&gt;
+        &lt;td&gt;Designer&lt;/td&gt;
+        &lt;td&gt;+3 434 65 93&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;3&lt;/th&gt;
+        &lt;td&gt;Kale&lt;/td&gt;
+        &lt;td&gt;Thornton&lt;/td&gt;
+        &lt;td&gt;Developer&lt;/td&gt;
+        &lt;td&gt;+3 285 42 88&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/div&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="pug4" role="tabpanel">
+                    <pre class="line-numbers"><code class="lang-pug">// Light table with striped rows
+.table-responsive
+  table.table.table-striped
+    thead
+      tr
+        th #
+        th First Name
+        th Last Name
+        th Position
+        th Phone
+    tbody
+      tr
+        th(scope=&quot;row&quot;) 1
+        td John
+        td Doe
+        td CEO, Founder
+        td +3 555 68 70
+      tr
+        th(scope=&quot;row&quot;) 2
+        td Anna
+        td Cabana
+        td Designer
+        td +3 434 65 93
+      tr
+        th(scope=&quot;row&quot;) 3
+        td Kale
+        td Thornton
+        td Developer
+        td +3 285 42 88
+
+// Dark table with striped rows
+.table-responsive
+  table.table.table-dark.table-striped
+    thead
+      tr
+        th #
+        th First Name
+        th Last Name
+        th Position
+        th Phone
+    tbody
+      tr
+        th(scope=&quot;row&quot;) 1
+        td John
+        td Doe
+        td CEO, Founder
+        td +3 555 68 70
+      tr
+        th(scope=&quot;row&quot;) 2
+        td Anna
+        td Cabana
+        td Designer
+        td +3 434 65 93
+      tr
+        th(scope=&quot;row&quot;) 3
+        td Kale
+        td Thornton
+        td Developer
+        td +3 285 42 88
+</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Bordered table-->
+          <section class="pb-5 mb-md-2" id="tables-bordered">
+            <h2 class="h5 mb-3">Bordered table</h2>
+            <div class="card border-0 box-shadow">
+              <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs" role="tablist">
+                  <li class="nav-item"><a class="nav-link active" href="#result5" data-toggle="tab" role="tab" aria-controls="result5" aria-selected="true">Result</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#html5" data-toggle="tab" role="tab" aria-controls="html5" aria-selected="false">HTML</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#pug5" data-toggle="tab" role="tab" aria-controls="pug5" aria-selected="false">Pug</a></li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <div class="tab-content">
+                  <div class="tab-pane fade show active" id="result5" role="tabpanel">
+                    <div class="table-responsive mb-3">
+                      <table class="table table-bordered">
+                        <thead>
+                          <tr>
+                            <th>#</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Position</th>
+                            <th>Phone</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>John</td>
+                            <td>Doe</td>
+                            <td>CEO, Founder</td>
+                            <td>+3 555 68 70</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Anna</td>
+                            <td>Cabana</td>
+                            <td>Designer</td>
+                            <td>+3 434 65 93</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Kale</td>
+                            <td>Thornton</td>
+                            <td>Developer</td>
+                            <td>+3 285 42 88</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="table-responsive">
+                      <table class="table table-dark table-bordered">
+                        <thead>
+                          <tr>
+                            <th>#</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Position</th>
+                            <th>Phone</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>John</td>
+                            <td>Doe</td>
+                            <td>CEO, Founder</td>
+                            <td>+3 555 68 70</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Anna</td>
+                            <td>Cabana</td>
+                            <td>Designer</td>
+                            <td>+3 434 65 93</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Kale</td>
+                            <td>Thornton</td>
+                            <td>Developer</td>
+                            <td>+3 285 42 88</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="html5" role="tabpanel">
+                    <pre class="line-numbers"><code class="lang-html">&lt;!-- Light bordered table --&gt;
+&lt;div class=&quot;table-responsive&quot;&gt;
+  &lt;table class=&quot;table table-bordered&quot;&gt;
+    &lt;thead;&gt;
+      &lt;tr&gt;
+        &lt;th&gt;#&lt;/th&gt;
+        &lt;th&gt;First Name&lt;/th&gt;
+        &lt;th&gt;Last Name&lt;/th&gt;
+        &lt;th&gt;Position&lt;/th&gt;
+        &lt;th&gt;Phone&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
+        &lt;td&gt;John&lt;/td&gt;
+        &lt;td&gt;Doe&lt;/td&gt;
+        &lt;td&gt;CEO, Founder&lt;/td&gt;
+        &lt;td&gt;+3 555 68 70&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;2&lt;/th&gt;
+        &lt;td&gt;Anna&lt;/td&gt;
+        &lt;td&gt;Cabana&lt;/td&gt;
+        &lt;td&gt;Designer&lt;/td&gt;
+        &lt;td&gt;+3 434 65 93&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;3&lt;/th&gt;
+        &lt;td&gt;Kale&lt;/td&gt;
+        &lt;td&gt;Thornton&lt;/td&gt;
+        &lt;td&gt;Developer&lt;/td&gt;
+        &lt;td&gt;+3 285 42 88&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/div&gt;
+
+&lt;!-- Dark bordered table --&gt;
+&lt;div class=&quot;table-responsive&quot;&gt;
+  &lt;table class=&quot;table table-dark table-bordered&quot;&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;#&lt;/th&gt;
+        &lt;th&gt;First Name&lt;/th&gt;
+        &lt;th&gt;Last Name&lt;/th&gt;
+        &lt;th&gt;Position&lt;/th&gt;
+        &lt;th&gt;Phone&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
+        &lt;td&gt;John&lt;/td&gt;
+        &lt;td&gt;Doe&lt;/td&gt;
+        &lt;td&gt;CEO, Founder&lt;/td&gt;
+        &lt;td&gt;+3 555 68 70&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;2&lt;/th&gt;
+        &lt;td&gt;Anna&lt;/td&gt;
+        &lt;td&gt;Cabana&lt;/td&gt;
+        &lt;td&gt;Designer&lt;/td&gt;
+        &lt;td&gt;+3 434 65 93&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;3&lt;/th&gt;
+        &lt;td&gt;Kale&lt;/td&gt;
+        &lt;td&gt;Thornton&lt;/td&gt;
+        &lt;td&gt;Developer&lt;/td&gt;
+        &lt;td&gt;+3 285 42 88&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/div&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="pug5" role="tabpanel">
+                    <pre class="line-numbers"><code class="lang-pug">// Light bordered table
+.table-responsive
+  table.table.table-bordered
+    thead
+      tr
+        th #
+        th First Name
+        th Last Name
+        th Position
+        th Phone
+    tbody
+      tr
+        th(scope=&quot;row&quot;) 1
+        td John
+        td Doe
+        td CEO, Founder
+        td +3 555 68 70
+      tr
+        th(scope=&quot;row&quot;) 2
+        td Anna
+        td Cabana
+        td Designer
+        td +3 434 65 93
+      tr
+        th(scope=&quot;row&quot;) 3
+        td Kale
+        td Thornton
+        td Developer
+        td +3 285 42 88
+
+// Dark bordered table
+.table-responsive
+  table.table.table-dark.table-bordered
+    thead
+      tr
+        th #
+        th First Name
+        th Last Name
+        th Position
+        th Phone
+    tbody
+      tr
+        th(scope=&quot;row&quot;) 1
+        td John
+        td Doe
+        td CEO, Founder
+        td +3 555 68 70
+      tr
+        th(scope=&quot;row&quot;) 2
+        td Anna
+        td Cabana
+        td Designer
+        td +3 434 65 93
+      tr
+        th(scope=&quot;row&quot;) 3
+        td Kale
+        td Thornton
+        td Developer
+        td +3 285 42 88
+</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Hoverable rows-->
+          <section class="pb-5 mb-md-2" id="tables-hoverable">
+            <h2 class="h5 mb-3">Hoverable rows</h2>
+            <div class="card border-0 box-shadow">
+              <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs" role="tablist">
+                  <li class="nav-item"><a class="nav-link active" href="#result6" data-toggle="tab" role="tab" aria-controls="result6" aria-selected="true">Result</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#html6" data-toggle="tab" role="tab" aria-controls="html6" aria-selected="false">HTML</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#pug6" data-toggle="tab" role="tab" aria-controls="pug6" aria-selected="false">Pug</a></li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <div class="tab-content">
+                  <div class="tab-pane fade show active" id="result6" role="tabpanel">
+                    <div class="table-responsive mb-3">
+                      <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th>#</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Position</th>
+                            <th>Phone</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>John</td>
+                            <td>Doe</td>
+                            <td>CEO, Founder</td>
+                            <td>+3 555 68 70</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Anna</td>
+                            <td>Cabana</td>
+                            <td>Designer</td>
+                            <td>+3 434 65 93</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Kale</td>
+                            <td>Thornton</td>
+                            <td>Developer</td>
+                            <td>+3 285 42 88</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="table-responsive">
+                      <table class="table table-dark table-hover">
+                        <thead>
+                          <tr>
+                            <th>#</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Position</th>
+                            <th>Phone</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>John</td>
+                            <td>Doe</td>
+                            <td>CEO, Founder</td>
+                            <td>+3 555 68 70</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Anna</td>
+                            <td>Cabana</td>
+                            <td>Designer</td>
+                            <td>+3 434 65 93</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Kale</td>
+                            <td>Thornton</td>
+                            <td>Developer</td>
+                            <td>+3 285 42 88</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="html6" role="tabpanel">
+                    <pre class="line-numbers"><code class="lang-html">&lt;!-- Light table with hoverable rows --&gt;
+&lt;div class=&quot;table-responsive&quot;&gt;
+  &lt;table class=&quot;table table-hover&quot;&gt;
+    &lt;thead;&gt;
+      &lt;tr&gt;
+        &lt;th&gt;#&lt;/th&gt;
+        &lt;th&gt;First Name&lt;/th&gt;
+        &lt;th&gt;Last Name&lt;/th&gt;
+        &lt;th&gt;Position&lt;/th&gt;
+        &lt;th&gt;Phone&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
+        &lt;td&gt;John&lt;/td&gt;
+        &lt;td&gt;Doe&lt;/td&gt;
+        &lt;td&gt;CEO, Founder&lt;/td&gt;
+        &lt;td&gt;+3 555 68 70&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;2&lt;/th&gt;
+        &lt;td&gt;Anna&lt;/td&gt;
+        &lt;td&gt;Cabana&lt;/td&gt;
+        &lt;td&gt;Designer&lt;/td&gt;
+        &lt;td&gt;+3 434 65 93&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;3&lt;/th&gt;
+        &lt;td&gt;Kale&lt;/td&gt;
+        &lt;td&gt;Thornton&lt;/td&gt;
+        &lt;td&gt;Developer&lt;/td&gt;
+        &lt;td&gt;+3 285 42 88&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/div&gt;
+
+&lt;!-- Dark table with hoverable rows --&gt;
+&lt;div class=&quot;table-responsive&quot;&gt;
+  &lt;table class=&quot;table table-dark table-hover&quot;&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;#&lt;/th&gt;
+        &lt;th&gt;First Name&lt;/th&gt;
+        &lt;th&gt;Last Name&lt;/th&gt;
+        &lt;th&gt;Position&lt;/th&gt;
+        &lt;th&gt;Phone&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
+        &lt;td&gt;John&lt;/td&gt;
+        &lt;td&gt;Doe&lt;/td&gt;
+        &lt;td&gt;CEO, Founder&lt;/td&gt;
+        &lt;td&gt;+3 555 68 70&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;2&lt;/th&gt;
+        &lt;td&gt;Anna&lt;/td&gt;
+        &lt;td&gt;Cabana&lt;/td&gt;
+        &lt;td&gt;Designer&lt;/td&gt;
+        &lt;td&gt;+3 434 65 93&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;3&lt;/th&gt;
+        &lt;td&gt;Kale&lt;/td&gt;
+        &lt;td&gt;Thornton&lt;/td&gt;
+        &lt;td&gt;Developer&lt;/td&gt;
+        &lt;td&gt;+3 285 42 88&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/div&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="pug6" role="tabpanel">
+                    <pre class="line-numbers"><code class="lang-pug">// Light table with hoverable rows
+.table-responsive
+  table.table.table-hover
+    thead
+      tr
+        th #
+        th First Name
+        th Last Name
+        th Position
+        th Phone
+    tbody
+      tr
+        th(scope=&quot;row&quot;) 1
+        td John
+        td Doe
+        td CEO, Founder
+        td +3 555 68 70
+      tr
+        th(scope=&quot;row&quot;) 2
+        td Anna
+        td Cabana
+        td Designer
+        td +3 434 65 93
+      tr
+        th(scope=&quot;row&quot;) 3
+        td Kale
+        td Thornton
+        td Developer
+        td +3 285 42 88
+
+// Dark table with hoverable rows
+.table-responsive
+  table.table.table-dark.table-hover
+    thead
+      tr
+        th #
+        th First Name
+        th Last Name
+        th Position
+        th Phone
+    tbody
+      tr
+        th(scope=&quot;row&quot;) 1
+        td John
+        td Doe
+        td CEO, Founder
+        td +3 555 68 70
+      tr
+        th(scope=&quot;row&quot;) 2
+        td Anna
+        td Cabana
+        td Designer
+        td +3 434 65 93
+      tr
+        th(scope=&quot;row&quot;) 3
+        td Kale
+        td Thornton
+        td Developer
+        td +3 285 42 88
+</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Contextual colors-->
+          <section class="pb-5 mb-md-2" id="tables-contextual">
+            <h2 class="h5 mb-3">Contextual colors</h2>
+            <div class="card border-0 box-shadow">
+              <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs" role="tablist">
+                  <li class="nav-item"><a class="nav-link active" href="#result7" data-toggle="tab" role="tab" aria-controls="result7" aria-selected="true">Result</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#html7" data-toggle="tab" role="tab" aria-controls="html7" aria-selected="false">HTML</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#pug7" data-toggle="tab" role="tab" aria-controls="pug7" aria-selected="false">Pug</a></li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <div class="tab-content">
+                  <div class="tab-pane fade show active" id="result7" role="tabpanel">
+                    <div class="table-responsive mb-3">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th>#</th>
+                            <th>Class</th>
+                            <th>Heading</th>
+                            <th>Heading</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="table-active">
+                            <th scope="row">1</th>
+                            <td>Active</td>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Default</td>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                          </tr>
+                          <tr class="table-primary">
+                            <th scope="row">3</th>
+                            <td>Primary</td>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">4</th>
+                            <td>Default</td>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                          </tr>
+                          <tr class="table-accent">
+                            <th scope="row">5</th>
+                            <td>Accent</td>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">6</th>
+                            <td>Default</td>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                          </tr>
+                          <tr class="table-secondary">
+                            <th scope="row">7</th>
+                            <td>Secondary</td>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">8</th>
+                            <td>Default</td>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                          </tr>
+                          <tr class="table-success">
+                            <th scope="row">9</th>
+                            <td>Success</td>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">10</th>
+                            <td>Default</td>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                          </tr>
+                          <tr class="table-info">
+                            <th scope="row">11</th>
+                            <td>Info</td>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">12</th>
+                            <td>Default</td>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                          </tr>
+                          <tr class="table-warning">
+                            <th scope="row">13</th>
+                            <td>Warning</td>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">14</th>
+                            <td>Default</td>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                          </tr>
+                          <tr class="table-danger">
+                            <th scope="row">15</th>
+                            <td>Danger</td>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="table-responsive">
+                      <table class="table table-dark">
+                        <thead>
+                          <tr>
+                            <th>#</th>
+                            <th>Column heading</th>
+                            <th>Column heading</th>
+                            <th>Column heading</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="bg-primary">
+                            <th scope="row">1</th>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                          </tr>
+                          <tr class="bg-accent">
+                            <th scope="row">3</th>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">4</th>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                          </tr>
+                          <tr class="bg-success">
+                            <th scope="row">5</th>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">6</th>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                          </tr>
+                          <tr class="bg-info">
+                            <th scope="row">7</th>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">8</th>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                          </tr>
+                          <tr class="bg-warning">
+                            <th scope="row">9</th>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">10</th>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                          </tr>
+                          <tr class="bg-danger">
+                            <th scope="row">11</th>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="html7" role="tabpanel">
+                    <pre class="line-numbers"><code class="lang-html">&lt;!-- Light table with contextual rows --&gt;
+&lt;div class=&quot;table-responsive&quot;&gt;
+  &lt;table class=&quot;table&quot;&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;#&lt;/th&gt;
+        &lt;th&gt;Class&lt;/th&gt;
+        &lt;th&gt;Heading&lt;/th&gt;
+        &lt;th&gt;Heading&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr class=&quot;table-active&quot;&gt;
+        &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
+        &lt;td&gt;Active&lt;/td&gt;
+        &lt;td&gt;Column content&lt;/td&gt;
+        &lt;td&gt;Column content&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr class=&quot;table-primary&quot;&gt;
+        &lt;th scope=&quot;row&quot;&gt;2&lt;/th&gt;
+        &lt;td&gt;Primary&lt;/td&gt;
+        &lt;td&gt;Column content&lt;/td&gt;
+        &lt;td&gt;Column content&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr class=&quot;table-accent&quot;&gt;
+        &lt;th scope=&quot;row&quot;&gt;3&lt;/th&gt;
+        &lt;td&gt;Primary&lt;/td&gt;
+        &lt;td&gt;Column content&lt;/td&gt;
+        &lt;td&gt;Column content&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr class=&quot;table-secondary&quot;&gt;
+        &lt;th scope=&quot;row&quot;&gt;4&lt;/th&gt;
+        &lt;td&gt;Secondary&lt;/td&gt;
+        &lt;td&gt;Column content&lt;/td&gt;
+        &lt;td&gt;Column content&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr class=&quot;table-success&quot;&gt;
+        &lt;th scope=&quot;row&quot;&gt;5&lt;/th&gt;
+        &lt;td&gt;Success&lt;/td&gt;
+        &lt;td&gt;Column content&lt;/td&gt;
+        &lt;td&gt;Column content&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr class=&quot;table-info&quot;&gt;
+        &lt;th scope=&quot;row&quot;&gt;6&lt;/th&gt;
+        &lt;td&gt;Info&lt;/td&gt;
+        &lt;td&gt;Column content&lt;/td&gt;
+        &lt;td&gt;Column content&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr class=&quot;table-warning&quot;&gt;
+        &lt;th scope=&quot;row&quot;&gt;7&lt;/th&gt;
+        &lt;td&gt;Warning&lt;/td&gt;
+        &lt;td&gt;Column content&lt;/td&gt;
+        &lt;td&gt;Column content&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr class=&quot;table-danger&quot;&gt;
+        &lt;th scope=&quot;row&quot;&gt;8&lt;/th&gt;
+        &lt;td&gt;Danger&lt;/td&gt;
+        &lt;td&gt;Column content&lt;/td&gt;
+        &lt;td&gt;Column content&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/div&gt;
+
+&lt;!-- Dark table with contextual rows --&gt;
+&lt;div class=&quot;table-responsive&quot;&gt;
+  &lt;table class=&quot;table table-dark&quot;&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;#&lt;/th&gt;
+        &lt;th&gt;Column heading&lt;/th&gt;
+        &lt;th&gt;Column heading&lt;/th&gt;
+        &lt;th&gt;Column heading&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr class=&quot;bg-primary&quot;&gt;
+        &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
+        &lt;td&gt;Column content&lt;/td&gt;
+        &lt;td&gt;Column content&lt;/td&gt;
+        &lt;td&gt;Column content&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr class=&quot;bg-accent&quot;&gt;
+        &lt;th scope=&quot;row&quot;&gt;2&lt;/th&gt;
+        &lt;td&gt;Column content&lt;/td&gt;
+        &lt;td&gt;Column content&lt;/td&gt;
+        &lt;td&gt;Column content&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr class=&quot;bg-success&quot;&gt;
+        &lt;th scope=&quot;row&quot;&gt;3&lt;/th&gt;
+        &lt;td&gt;Column content&lt;/td&gt;
+        &lt;td&gt;Column content&lt;/td&gt;
+        &lt;td&gt;Column content&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr class=&quot;bg-info&quot;&gt;
+        &lt;th scope=&quot;row&quot;&gt;4&lt;/th&gt;
+        &lt;td&gt;Column content&lt;/td&gt;
+        &lt;td&gt;Column content&lt;/td&gt;
+        &lt;td&gt;Column content&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr class=&quot;bg-warning&quot;&gt;
+        &lt;th scope=&quot;row&quot;&gt;5&lt;/th&gt;
+        &lt;td&gt;Column content&lt;/td&gt;
+        &lt;td&gt;Column content&lt;/td&gt;
+        &lt;td&gt;Column content&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr class=&quot;bg-danger&quot;&gt;
+        &lt;th scope=&quot;row&quot;&gt;6&lt;/th&gt;
+        &lt;td&gt;Column content&lt;/td&gt;
+        &lt;td&gt;Column content&lt;/td&gt;
+        &lt;td&gt;Column content&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/div&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="pug7" role="tabpanel">
+                    <pre class="line-numbers"><code class="lang-pug">// Light table with contextual rows
+.table-responsive
+  table.table
+    thead
+      tr
+        th #
+        th Class
+        th Heading
+        th Heading
+    tbody
+      tr.table-active
+        th(scope=&quot;row'&quot;) 1
+        td Active
+        td Column content
+        td Column content
+      tr.table-primary
+        th(scope=&quot;row'&quot;) 2
+        td Primary
+        td Column content
+        td Column content
+      tr.table-accent
+        th(scope=&quot;row'&quot;) 3
+        td Primary
+        td Column content
+        td Column content
+      tr.table-secondary
+        th(scope=&quot;row'&quot;) 4
+        td Secondary
+        td Column content
+        td Column content
+      tr.table-success
+        th(scope=&quot;row'&quot;) 5
+        td Success
+        td Column content
+        td Column content
+      tr.table-info
+        th(scope=&quot;row'&quot;) 6
+        td Info
+        td Column content
+        td Column content
+      tr.table-warning
+        th(scope=&quot;row'&quot;) 7
+        td Warning
+        td Column content
+        td Column content
+      tr.table-danger
+        th(scope=&quot;row'&quot;) 8
+        td Danger
+        td Column content
+        td Column content
+
+// Dark table with contextual rows
+.table-responsive
+  table.table.table-dark
+    thead
+      tr
+        th #
+        th Column heading
+        th Column heading
+        th Column heading
+    tbody
+      tr.bg-primary
+        th(scope=&quot;row'&quot;) 1
+        td Column content
+        td Column content
+        td Column content
+      tr.bg-accent
+        th(scope=&quot;row'&quot;) 2
+        td Column content
+        td Column content
+        td Column content
+      tr.bg-success
+        th(scope=&quot;row'&quot;) 3
+        td Column content
+        td Column content
+        td Column content
+      tr.bg-info
+        th(scope=&quot;row'&quot;) 4
+        td Column content
+        td Column content
+        td Column content
+      tr.bg-warning
+        th(scope=&quot;row'&quot;) 5
+        td Column content
+        td Column content
+        td Column content
+      tr.bg-danger
+        th(scope=&quot;row'&quot;) 6
+        td Column content
+        td Column content
+        td Column content</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <!-- Quick (anchor) navigation-->
+        <div class="col-xl-3 d-none d-xl-block pl-5">
+          <aside class="sticky-top pt-5">
+            <div class="pt-5 mt-5">
+              <div class="widget widget-links pl-4 border-left">
+                <h3 class="widget-title">Jump to</h3>
+                <ul class="widget-list">
+                  <li class="widget-list-item"><a class="widget-list-link" data-scroll href="#tables-basic">Basic example</a>
+                  </li>
+                  <li class="widget-list-item"><a class="widget-list-link" data-scroll href="#tables-dark">Dark table</a>
+                  </li>
+                  <li class="widget-list-item"><a class="widget-list-link" data-scroll href="#tables-head-options">Table head options</a>
+                  </li>
+                  <li class="widget-list-item"><a class="widget-list-link" data-scroll href="#tables-striped-rows">Striped rows</a>
+                  </li>
+                  <li class="widget-list-item"><a class="widget-list-link" data-scroll href="#tables-bordered">Bordered table</a>
+                  </li>
+                  <li class="widget-list-item"><a class="widget-list-link" data-scroll href="#tables-hoverable">Hoverable rows</a>
+                  </li>
+                  <li class="widget-list-item"><a class="widget-list-link" data-scroll href="#tables-contextual">Contextual colors</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+    <!-- Back To Top Button--><a class="btn-scroll-top" href="#top" data-scroll><span class="btn-scroll-top-tooltip text-muted font-size-sm mr-2">Top</span><i class="btn-scroll-top-icon czi-arrow-up">   </i></a>
+    <!-- Vendor scrits: js libraries and plugins-->
+    <script src="../vendor/jquery/dist/jquery.slim.min.js"></script>
+    <script src="../vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../vendor/bs-custom-file-input/dist/bs-custom-file-input.min.js"></script>
+    <script src="../vendor/simplebar/dist/simplebar.min.js"></script>
+    <script src="../vendor/tiny-slider/dist/min/tiny-slider.js"></script>
+    <script src="../vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="../vendor/prismjs/components/prism-core.min.js"></script>
+    <script src="../vendor/prismjs/components/prism-markup.min.js"></script>
+    <script src="../vendor/prismjs/components/prism-clike.min.js"></script>
+    <script src="../vendor/prismjs/components/prism-javascript.min.js"></script>
+    <script src="../vendor/prismjs/components/prism-pug.min.js"></script>
+    <script src="../vendor/prismjs/plugins/toolbar/prism-toolbar.min.js"></script>
+    <script src="../vendor/prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
+    <script src="../vendor/prismjs/plugins/line-numbers/prism-line-numbers.min.js"></script>
+    <!-- Main theme script-->
+    <script src="../js/theme.min.js"></script>
+  </body>
+</html>

@@ -4,6 +4,7 @@ from home.models import BaseModel
 # Shopkeeper , Customer 
 
 
+
 class Shopkeeper(User):
     '''
     Shopkeeper model handling restraunt owner
@@ -27,6 +28,10 @@ class Customer(User):
     phone_number = models.CharField(max_length=10)
     email_token = models.CharField(max_length=100, null=True,blank=True)
     email_verified = models.BooleanField(default=False)
+    
+
+    class Meta:
+        db_table = 'customer'
     
 
 

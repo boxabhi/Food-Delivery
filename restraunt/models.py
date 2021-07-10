@@ -11,7 +11,6 @@ class FoodItem(BaseModel):
         return self.food_item_type
 
 
-
 class Restraunt(BaseModel):
     shopkeeper = models.OneToOneField(Shopkeeper , related_name='shopkeeper' , on_delete=models.CASCADE)
     restraunt_name = models.CharField(max_length=100)
@@ -29,6 +28,9 @@ class Restraunt(BaseModel):
 
     def __str__(self) -> str:
         return self.restraunt_name
+
+
+
 
 
 class RestrauntMenu(BaseModel):

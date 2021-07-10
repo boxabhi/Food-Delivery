@@ -14,3 +14,5 @@ class RestrauntMenuAdmin(admin.StackedInline):
 class RestrauntAdmin(admin.ModelAdmin):
     inlines = [ RestrauntMenuAdmin ]
     
+
+admin.site.register(RestrauntMenu)

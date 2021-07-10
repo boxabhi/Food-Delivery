@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Cartzilla | Badges
+    </title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="Cartzilla - Bootstrap E-commerce Template">
+    <meta name="keywords" content="bootstrap, shop, e-commerce, market, modern, responsive,  business, mobile, bootstrap 4, html5, css3, jquery, js, gallery, slider, touch, creative, clean">
+    <meta name="author" content="Createx Studio">
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon and Touch Icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
+    <link rel="mask-icon" color="#fe6a6a" href="../safari-pinned-tab.svg">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Vendor Styles including: Font Icons, Plugins, etc.-->
+    <link rel="stylesheet" media="screen" href="../vendor/simplebar/dist/simplebar.min.css"/>
+    <link rel="stylesheet" media="screen" href="../vendor/tiny-slider/dist/tiny-slider.css"/>
+    <link rel="stylesheet" media="screen" href="../vendor/prismjs/themes/prism.css"/>
+    <link rel="stylesheet" media="screen" href="../vendor/prismjs/plugins/toolbar/prism-toolbar.css"/>
+    <link rel="stylesheet" media="screen" href="../vendor/prismjs/plugins/line-numbers/prism-line-numbers.css"/>
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="../css/theme.min.css">
+  </head>
+  <!-- Body-->
+  <body>
+    <main class="container-fluid">
+      <!-- Main content-->
+      <section class="sidenav-enabled row pb-3 pb-md-4">
+        <div class="col-xl-9">
+          <!-- Navbar-->
+          <header class="navbar navbar-docs navbar-expand navbar-light fixed-top bg-light box-shadow-sm px-3 px-lg-4" data-scroll-header><a class="navbar-brand d-lg-none mr-auto" href="typography.html" style="min-width: 7rem;"><img width="142" src="../img/logo-dark.png" alt="Cartzilla"/></a>
+            <ul class="navbar-nav ml-auto d-none d-lg-flex">
+              <li class="nav-item"><a class="nav-link" href="../index.html"><i class="czi-eye align-middle mt-n1 mr-2"></i>Live preview</a></li>
+              <li class="nav-item">
+                <div class="nav-link disabled text-border px-1">|</div>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="../docs/dev-setup.html"><i class="czi-book align-middle mt-n1 mr-2"></i>Documentation</a></li>
+              <li class="nav-item">
+                <div class="nav-link disabled text-border px-1">|</div>
+              </li>
+            </ul>
+            <button class="navbar-toggler d-block d-lg-none" type="button" data-toggle="collapse" data-target="#components-nav"><span class="navbar-toggler-icon"></span></button><a class="btn btn-primary btn-shadow ml-2 ml-lg-4" href="https://themes.getbootstrap.com/product/cartzilla-bootstrap-e-commerce-template-ui-kit/" target="_blank" rel="noopener"><i class="czi-cart mr-1 d-none d-sm-inline-block"></i>Buy now</a>
+          </header>
+          <!-- Side navigation-->
+          <aside class="sidenav collapse bg-dark" id="components-nav">
+            <header class="sidenav-header bg-darker d-none d-lg-block"><a class="navbar-brand" href="typography.html" style="min-width: 7rem;"><img width="142" src="../img/logo-light.png" alt="Cartzilla"/></a><span class="badge badge-info">Components</span></header>
+            <div class="sidenav-body" data-simplebar data-simplebar-auto-hide="true">
+              <div class="pt-4 pb-3 mt-3">
+                <div class="d-flex d-lg-none pb-4 mb-4 border-bottom border-light">
+                  <div class="w-50 pr-2"><a class="btn btn-outline-light btn-block" href="../index.html"><i class="czi-eye align-middle mt-n1 mr-2"></i>Live demo</a></div>
+                  <div class="w-50 pl-2"><a class="btn btn-light btn-block" href="../docs/dev-setup.html"><i class="czi-book align-middle mt-n1 mr-2"></i>Docs</a></div>
+                </div>
+                <div class="widget widget-links widget-light mb-4 pb-2">
+                  <h3 class="widget-title text-white">Content</h3>
+                  <ul class="widget-list">
+                    <li class="widget-list-item"><a class="widget-list-link" href="typography.html">Typography</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="icon-font.html">Icon font</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="code.html">Code</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="images.html">Images &amp; figures</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="tables.html">Tables</a></li>
+                  </ul>
+                </div>
+                <div class="widget widget-links widget-light mb-4 pb-2">
+                  <h3 class="widget-title text-white">Components</h3>
+                  <ul class="widget-list">
+                    <li class="widget-list-item"><a class="widget-list-link" href="alerts.html">Alerts</a></li>
+                    <li class="widget-list-item active"><a class="widget-list-link" href="badge.html">Badges</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="blog-components.html">Blog components</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="breadcrumb.html">Breadcrumb</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="buttons.html">Buttons</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="button-group.html">Button group</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="cards.html">Cards</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="carousel.html">Carousel</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="charts.html">Charts</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="collapse.html">Collapse</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="contacts-card.html">Contacts card</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="countdown.html">Countdown</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="dropdowns.html">Dropdowns</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="footer.html">Footer</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="forms.html">Forms</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="gallery.html">Gallery</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="input-group.html">Input group</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="jumbotron.html">Jumbotron</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="list-group.html">List group</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="media-object.html">Media object</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="modal.html">Modal</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="navbar.html">Navbar</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="pagination.html">Pagination</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="pills.html">Pills</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="popovers.html">Popovers</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="progress.html">Progress</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="shop-components.html">Shop components</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="social-buttons.html">Social buttons</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="spinners.html">Spinners</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="steps.html">Steps</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="tabs.html">Tabs</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="team.html">Team</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="testimonials.html">Testimonials / reviews</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="toasts.html">Toasts</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="tooltips.html">Tooltips</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="video-popup.html">Video popup</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="widgets.html">Widgets</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </aside>
+          <!-- Page title-->
+          <div class="border-bottom mt-lg-2 pt-5 pb-2 mb-5">
+            <h1 class="mt-lg-4 pt-lg-5">Badges</h1>
+            <div class="d-flex flex-wrap flex-md-nowrap justify-content-between">
+              <p class="text-muted">Small count and labeling component.</p>
+              <p class="font-size-sm pl-md-4"><a class="text-nowrap" href="https://getbootstrap.com/docs/4.5/components/badge/" target="_blank" rel="noopener">Bootstrap docs<i class="czi-arrow-right align-middle ml-1"></i></a></p>
+            </div>
+          </div>
+          <!-- Contextual variations-->
+          <section class="pb-5 mb-md-2" id="badge-contextual">
+            <h2 class="h5 mb-3">Contextual variations</h2>
+            <div class="card border-0 box-shadow">
+              <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs" role="tablist">
+                  <li class="nav-item"><a class="nav-link active" href="#result1" data-toggle="tab" role="tab" aria-controls="result1" aria-selected="true">Result</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#html1" data-toggle="tab" role="tab" aria-controls="html1" aria-selected="false">HTML</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#pug1" data-toggle="tab" role="tab" aria-controls="pug1" aria-selected="false">Pug</a></li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <div class="tab-content">
+                  <div class="tab-pane fade show active" id="result1" role="tabpanel"><span class="badge badge-primary mr-2 mb-2">Primary</span><span class="badge badge-accent mr-2 mb-2">Accent</span><span class="badge badge-secondary mr-2 mb-2">Secondary</span><span class="badge badge-success mr-2 mb-2">Success</span><span class="badge badge-danger mr-2 mb-2">Danger</span><span class="badge badge-warning mr-2 mb-2">Warning</span><span class="badge badge-info mr-2 mb-2">Info</span><span class="badge badge-light mr-2 mb-2">Light</span><span class="badge badge-dark mr-2 mb-2">Dark</span></div>
+                  <div class="tab-pane fade" id="html1" role="tabpanel">
+                    <pre class="line-numbers"><code class="lang-html">&lt;!-- Primary badge --&gt;
+&lt;span class=&quot;badge badge-primary&quot;&gt;Primary&lt;/span&gt;
+
+&lt;!-- Accent badge --&gt;
+&lt;span class=&quot;badge badge-accent&quot;&gt;Accent&lt;/span&gt;
+
+&lt;!-- Secondary badge --&gt;
+&lt;span class=&quot;badge badge-secondary&quot;&gt;Secondary&lt;/span&gt;
+
+&lt;!-- Success badge --&gt;
+&lt;span class=&quot;badge badge-success&quot;&gt;Success&lt;/span&gt;
+
+&lt;!-- Danger badge --&gt;
+&lt;span class=&quot;badge badge-danger&quot;&gt;Danger&lt;/span&gt;
+
+&lt;!-- Warning badge --&gt;
+&lt;span class=&quot;badge badge-warning&quot;&gt;Warning&lt;/span&gt;
+
+&lt;!-- Info badge --&gt;
+&lt;span class=&quot;badge badge-info&quot;&gt;Info&lt;/span&gt;
+
+&lt;!-- Light badge --&gt;
+&lt;span class=&quot;badge badge-light&quot;&gt;Light&lt;/span&gt;
+
+&lt;!-- Dark badge --&gt;
+&lt;span class=&quot;badge badge-dark&quot;&gt;Dark&lt;/span&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="pug1" role="tabpanel">
+                    <pre class="line-numbers"><code class="lang-pug">// Primary badge
+span.badge.badge-primary Primary
+
+// Accent badge
+span.badge.badge-accent Accent
+
+// Secondary badge
+span.badge.badge-secondary Secondary
+
+// Success badge
+span.badge.badge-success Success
+
+// Danger badge
+span.badge.badge-danger Danger
+
+// Warning badge
+span.badge.badge-warning Warning
+
+// Info badge
+span.badge.badge-info Info
+
+// Light badge
+span.badge.badge-light Light
+
+// Dark badge
+span.badge.badge-dark Dark
+</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Badge shadow-->
+          <section class="pb-5 mb-md-2" id="badge-shadow">
+            <h2 class="h5 mb-3">Badge shadow</h2>
+            <div class="card border-0 box-shadow">
+              <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs" role="tablist">
+                  <li class="nav-item"><a class="nav-link active" href="#result2" data-toggle="tab" role="tab" aria-controls="result2" aria-selected="true">Result</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#html2" data-toggle="tab" role="tab" aria-controls="html2" aria-selected="false">HTML</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#pug2" data-toggle="tab" role="tab" aria-controls="pug2" aria-selected="false">Pug</a></li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <div class="tab-content">
+                  <div class="tab-pane fade show active" id="result2" role="tabpanel"><span class="badge badge-primary badge-shadow mr-2 mb-2">Primary</span><span class="badge badge-accent badge-shadow mr-2 mb-2">Accent</span><span class="badge badge-secondary badge-shadow mr-2 mb-2">Secondary</span><span class="badge badge-success badge-shadow mr-2 mb-2">Success</span><span class="badge badge-danger badge-shadow mr-2 mb-2">Danger</span><span class="badge badge-warning badge-shadow mr-2 mb-2">Warning</span><span class="badge badge-info badge-shadow mr-2 mb-2">Info</span><span class="badge badge-light badge-shadow mr-2 mb-2">Light</span><span class="badge badge-dark badge-shadow mr-2 mb-2">Dark</span></div>
+                  <div class="tab-pane fade" id="html2" role="tabpanel">
+                    <pre class="line-numbers"><code class="lang-html">&lt;!-- Primary badge with shadow --&gt;
+&lt;span class=&quot;badge badge-primary badge-shadow&quot;&gt;Primary&lt;/span&gt;
+
+&lt;!-- Accent badge with shadow --&gt;
+&lt;span class=&quot;badge badge-accent badge-shadow&quot;&gt;Accent&lt;/span&gt;
+
+&lt;!-- Secondary badge with shadow --&gt;
+&lt;span class=&quot;badge badge-secondary badge-shadow&quot;&gt;Secondary&lt;/span&gt;
+
+&lt;!-- Success badge with shadow --&gt;
+&lt;span class=&quot;badge badge-success badge-shadow&quot;&gt;Success&lt;/span&gt;
+
+&lt;!-- Danger badge with shadow --&gt;
+&lt;span class=&quot;badge badge-danger badge-shadow&quot;&gt;Danger&lt;/span&gt;
+
+&lt;!-- Warning badge with shadow --&gt;
+&lt;span class=&quot;badge badge-warning badge-shadow&quot;&gt;Warning&lt;/span&gt;
+
+&lt;!-- Info badge with shadow --&gt;
+&lt;span class=&quot;badge badge-info badge-shadow&quot;&gt;Info&lt;/span&gt;
+
+&lt;!-- Light badge with shadow --&gt;
+&lt;span class=&quot;badge badge-light badge-shadow&quot;&gt;Light&lt;/span&gt;
+
+&lt;!-- Dark badge with shadow --&gt;
+&lt;span class=&quot;badge badge-dark badge-shadow&quot;&gt;Dark&lt;/span&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="pug2" role="tabpanel">
+                    <pre class="line-numbers"><code class="lang-pug">// Primary badge with shadow
+span.badge.badge-primary.badge-shadow Primary
+
+// Accent badge with shadow
+span.badge.badge-accent.badge-shadow Accent
+
+// Secondary badge with shadow
+span.badge.badge-secondary.badge-shadow Secondary
+
+// Success badge with shadow
+span.badge.badge-success.badge-shadow Success
+
+// Danger badge with shadow
+span.badge.badge-danger.badge-shadow Danger
+
+// Warning badge with shadow
+span.badge.badge-warning.badge-shadow Warning
+
+// Info badge with shadow
+span.badge.badge-info.badge-shadow Info
+
+// Light badge with shadow
+span.badge.badge-light.badge-shadow Light
+
+// Dark badge with shadow
+span.badge.badge-dark.badge-shadow Dark
+</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Pill badges-->
+          <section class="pb-5 mb-md-2" id="badge-pill">
+            <h2 class="h5 mb-3">Pill badges</h2>
+            <div class="card border-0 box-shadow">
+              <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs" role="tablist">
+                  <li class="nav-item"><a class="nav-link active" href="#result3" data-toggle="tab" role="tab" aria-controls="result3" aria-selected="true">Result</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#html3" data-toggle="tab" role="tab" aria-controls="html3" aria-selected="false">HTML</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#pug3" data-toggle="tab" role="tab" aria-controls="pug3" aria-selected="false">Pug</a></li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <div class="tab-content">
+                  <div class="tab-pane fade show active" id="result3" role="tabpanel"><span class="badge badge-pill badge-primary mr-2 mb-2">Primary</span><span class="badge badge-pill badge-accent mr-2 mb-2">Accent</span><span class="badge badge-pill badge-secondary mr-2 mb-2">Secondary</span><span class="badge badge-pill badge-success mr-2 mb-2">Success</span><span class="badge badge-pill badge-danger mr-2 mb-2">Danger</span><span class="badge badge-pill badge-warning mr-2 mb-2">Warning</span><span class="badge badge-pill badge-info mr-2 mb-2">Info</span><span class="badge badge-pill badge-light mr-2 mb-2">Light</span><span class="badge badge-pill badge-dark mr-2 mb-2">Dark</span></div>
+                  <div class="tab-pane fade" id="html3" role="tabpanel">
+                    <pre class="line-numbers"><code class="lang-html">&lt;!-- Primary badge --&gt;
+&lt;span class=&quot;badge badge-pill badge-primary&quot;&gt;Primary&lt;/span&gt;
+
+&lt;!-- Accent badge --&gt;
+&lt;span class=&quot;badge badge-pill badge-accent&quot;&gt;Accent&lt;/span&gt;
+
+&lt;!-- Secondary badge --&gt;
+&lt;span class=&quot;badge badge-pill badge-secondary&quot;&gt;Secondary&lt;/span&gt;
+
+&lt;!-- Success badge --&gt;
+&lt;span class=&quot;badge badge-pill badge-success&quot;&gt;Success&lt;/span&gt;
+
+&lt;!-- Danger badge --&gt;
+&lt;span class=&quot;badge badge-pill badge-danger&quot;&gt;Danger&lt;/span&gt;
+
+&lt;!-- Warning badge --&gt;
+&lt;span class=&quot;badge badge-pill badge-warning&quot;&gt;Warning&lt;/span&gt;
+
+&lt;!-- Info badge --&gt;
+&lt;span class=&quot;badge badge-pill badge-info&quot;&gt;Info&lt;/span&gt;
+
+&lt;!-- Light badge --&gt;
+&lt;span class=&quot;badge badge-pill badge-light&quot;&gt;Light&lt;/span&gt;
+
+&lt;!-- Dark badge --&gt;
+&lt;span class=&quot;badge badge-pill badge-dark&quot;&gt;Dark&lt;/span&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="pug3" role="tabpanel">
+                    <pre class="line-numbers"><code class="lang-pug">// Primary badge
+span.badge.badge-pill.badge-primary Primary
+
+// Accent badge
+span.badge.badge-pill.badge-accent Accent
+
+// Secondary badge
+span.badge.badge-pill.badge-secondary Secondary
+
+// Success badge
+span.badge.badge-pill.badge-success Success
+
+// Danger badge
+span.badge.badge-pill.badge-danger Danger
+
+// Warning badge
+span.badge.badge-pill.badge-warning Warning
+
+// Info badge
+span.badge.badge-pill.badge-info Info
+
+// Light badge
+span.badge.badge-pill.badge-light Light
+
+// Dark badge
+span.badge.badge-pill.badge-dark Dark
+</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Links-->
+          <section class="pb-5 mb-md-2" id="badge-links">
+            <h2 class="h5 mb-3">Links</h2>
+            <div class="card border-0 box-shadow">
+              <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs" role="tablist">
+                  <li class="nav-item"><a class="nav-link active" href="#result4" data-toggle="tab" role="tab" aria-controls="result4" aria-selected="true">Result</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#html4" data-toggle="tab" role="tab" aria-controls="html4" aria-selected="false">HTML</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#pug4" data-toggle="tab" role="tab" aria-controls="pug4" aria-selected="false">Pug</a></li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <div class="tab-content">
+                  <div class="tab-pane fade show active" id="result4" role="tabpanel"><a class="badge badge-primary mr-2 mb-2" href="#">Primary</a><a class="badge badge-secondary mr-2 mb-2" href="#">Secondary</a><a class="badge badge-success mr-2 mb-2" href="#">Success</a><a class="badge badge-danger mr-2 mb-2" href="#">Danger</a><a class="badge badge-warning mr-2 mb-2" href="#">Warning</a><a class="badge badge-info mr-2 mb-2" href="#">Info</a><a class="badge badge-light mr-2 mb-2" href="#">Light</a><a class="badge badge-dark mr-2 mb-2" href="#">Dark</a>
+                    <div class="pt-2"></div><a class="badge badge-primary badge-shadow mr-2 mb-2" href="#">Primary</a><a class="badge badge-secondary badge-shadow mr-2 mb-2" href="#">Secondary</a><a class="badge badge-success badge-shadow mr-2 mb-2" href="#">Success</a><a class="badge badge-danger badge-shadow mr-2 mb-2" href="#">Danger</a><a class="badge badge-warning badge-shadow mr-2 mb-2" href="#">Warning</a><a class="badge badge-info badge-shadow mr-2 mb-2" href="#">Info</a><a class="badge badge-light badge-shadow mr-2 mb-2" href="#">Light</a><a class="badge badge-dark badge-shadow mr-2 mb-2" href="#">Dark</a>
+                  </div>
+                  <div class="tab-pane fade" id="html4" role="tabpanel">
+                    <pre class="line-numbers"><code class="lang-html">&lt;!-- Primary link badge --&gt;
+&lt;a href=&quot;#&quot; class=&quot;badge badge-primary&quot;&gt;Primary&lt;/a&gt;
+
+&lt;!-- Secondary link badge --&gt;
+&lt;a href=&quot;#&quot; class=&quot;badge badge-secondary&quot;&gt;Secondary&lt;/a&gt;
+
+&lt;!-- Success link badge --&gt;
+&lt;a href=&quot;#&quot; class=&quot;badge badge-success&quot;&gt;Success&lt;/a&gt;
+
+&lt;!-- Danger link badge --&gt;
+&lt;a href=&quot;#&quot; class=&quot;badge badge-danger&quot;&gt;Danger&lt;/a&gt;
+
+&lt;!-- Warning link badge --&gt;
+&lt;a href=&quot;#&quot; class=&quot;badge badge-warning&quot;&gt;Warning&lt;/a&gt;
+
+&lt;!-- Info link badge --&gt;
+&lt;a href=&quot;#&quot; class=&quot;badge badge-info&quot;&gt;Info&lt;/a&gt;
+
+&lt;!-- Light link badge --&gt;
+&lt;a href=&quot;#&quot; class=&quot;badge badge-light&quot;&gt;Light&lt;/a&gt;
+
+&lt;!-- Dark link badge --&gt;
+&lt;a href=&quot;#&quot; class=&quot;badge badge-dark&quot;&gt;Dark&lt;/a&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="pug4" role="tabpanel">
+                    <pre class="line-numbers"><code class="lang-pug">// Primary link badge
+a(href=&quot;#&quot;).badgel.badge-primary Primary
+
+// Secondary link badge
+a(href=&quot;#&quot;).badge.badge-secondary Secondary
+
+// Success link badge
+a(href=&quot;#&quot;).badge.badge-success Success
+
+// Danger link badge
+a(href=&quot;#&quot;).badge.badge-danger Danger
+
+// Warning link badge
+a(href=&quot;#&quot;).badge.badge-warning Warning
+
+// Info link badge
+a(href=&quot;#&quot;).badge.badge-pill.badge-info Info
+
+// Light link badge
+a(href=&quot;#&quot;).badge.badge-light Light
+
+// Dark link badge
+a(href=&quot;#&quot;).badge.badge-dark Dark
+</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Inside heading-->
+          <section class="pb-5 mb-md-2" id="badge-heading">
+            <h2 class="h5 mb-3">Inside heading</h2>
+            <div class="card border-0 box-shadow">
+              <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs" role="tablist">
+                  <li class="nav-item"><a class="nav-link active" href="#result5" data-toggle="tab" role="tab" aria-controls="result5" aria-selected="true">Result</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#html5" data-toggle="tab" role="tab" aria-controls="html5" aria-selected="false">HTML</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#pug5" data-toggle="tab" role="tab" aria-controls="pug5" aria-selected="false">Pug</a></li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <div class="tab-content">
+                  <div class="tab-pane fade show active" id="result5" role="tabpanel">
+                    <h1>Example heading <span class="badge badge-secondary">New</span></h1>
+                    <h2>Example heading <span class="badge badge-secondary">New</span></h2>
+                    <h3>Example heading <span class="badge badge-secondary">New</span></h3>
+                    <h4>Example heading <span class="badge badge-secondary">New</span></h4>
+                    <h5>Example heading <span class="badge badge-secondary">New</span></h5>
+                    <h6>Example heading <span class="badge badge-secondary">New</span></h6>
+                  </div>
+                  <div class="tab-pane fade" id="html5" role="tabpanel">
+                    <pre class="line-numbers"><code class="lang-html">&lt;h1&gt;Example heading &lt;span class=&quot;badge badge-secondary&quot;&gt;New&lt;/span&gt;&lt;/h1&gt;
+&lt;h2&gt;Example heading &lt;span class=&quot;badge badge-secondary&quot;&gt;New&lt;/span&gt;&lt;/h2&gt;
+&lt;h3&gt;Example heading &lt;span class=&quot;badge badge-secondary&quot;&gt;New&lt;/span&gt;&lt;/h3&gt;
+&lt;h4&gt;Example heading &lt;span class=&quot;badge badge-secondary&quot;&gt;New&lt;/span&gt;&lt;/h4&gt;
+&lt;h5&gt;Example heading &lt;span class=&quot;badge badge-secondary&quot;&gt;New&lt;/span&gt;&lt;/h5&gt;
+&lt;h6&gt;Example heading &lt;span class=&quot;badge badge-secondary&quot;&gt;New&lt;/span&gt;&lt;/h6&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="pug5" role="tabpanel">
+                    <pre class="line-numbers"><code class="lang-pug">h1
+  | Example heading 
+  span.badge.badge-secondary New
+h2
+  | Example heading 
+  span.badge.badge-secondary New
+h3
+  | Example heading 
+  span.badge.badge-secondary New
+h4
+  | Example heading 
+  span.badge.badge-secondary New
+h5
+  | Example heading 
+  span.badge.badge-secondary New
+h6
+  | Example heading 
+  span.badge.badge-secondary New
+</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Inside button-->
+          <section class="pb-5 mb-md-2" id="badge-button">
+            <h2 class="h5 mb-3">Inside button</h2>
+            <div class="card border-0 box-shadow">
+              <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs" role="tablist">
+                  <li class="nav-item"><a class="nav-link active" href="#result6" data-toggle="tab" role="tab" aria-controls="result6" aria-selected="true">Result</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#html6" data-toggle="tab" role="tab" aria-controls="html6" aria-selected="false">HTML</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#pug6" data-toggle="tab" role="tab" aria-controls="pug6" aria-selected="false">Pug</a></li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <div class="tab-content">
+                  <div class="tab-pane fade show active" id="result6" role="tabpanel">
+                    <button class="btn btn-primary mr-3 mb-3" type="button">Notifications <span class="badge badge-light ml-1">4</span></button>
+                    <button class="btn btn-pill btn-dark mr-3 mb-3" type="button">Profile <span class="badge badge-pill badge-light ml-1">9</span></button>
+                    <button class="btn btn-outline-secondary mr-3 mb-3" type="button">Messages <span class="badge badge-info ml-1">18</span></button>
+                  </div>
+                  <div class="tab-pane fade" id="html6" role="tabpanel">
+                    <pre class="line-numbers"><code class="lang-html">&lt;!-- Button + badge --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;
+  Notifications &lt;span class=&quot;badge badge-light ml-1&quot;&gt;4&lt;/span&gt;
+&lt;/button&gt;
+
+&lt;!-- Pill button + pill badge --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-pill btn-dark&quot;&gt;
+  Profile &lt;span class=&quot;badge badge-pill badge-light ml-1&quot;&gt;9&lt;/span&gt;
+&lt;/button&gt;
+
+&lt;!-- Outline button + badge --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-outline-secondary&quot;&gt;
+  Messages &lt;span class=&quot;badge badge-info ml-1&quot;&gt;18&lt;/span&gt;
+&lt;/button&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="pug6" role="tabpanel">
+                    <pre class="line-numbers"><code class="lang-pug">// Button + badge
+button(type=&quot;button&quot;).btn.btn-primary
+  | Notifications 
+  span.badge.badge-light.ml-1 4
+
+// Pill button + pill badge
+button(type=&quot;button&quot;).btn.btn-pill.btn-dark
+  | Profile 
+  span.badge.badge-pill.badge-light.ml-1 9
+
+// Outline button + badge
+button(type=&quot;button&quot;).btn.btn-outline-secondary
+  | Messages 
+  span.badge.badge-info.ml-1 18
+</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Inside list group-->
+          <section class="pb-5 mb-md-2" id="badge-list-group">
+            <h2 class="h5 mb-3">Inside list group</h2>
+            <div class="card border-0 box-shadow">
+              <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs" role="tablist">
+                  <li class="nav-item"><a class="nav-link active" href="#result7" data-toggle="tab" role="tab" aria-controls="result7" aria-selected="true">Result</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#html7" data-toggle="tab" role="tab" aria-controls="html7" aria-selected="false">HTML</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#pug7" data-toggle="tab" role="tab" aria-controls="pug7" aria-selected="false">Pug</a></li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <div class="tab-content">
+                  <div class="tab-pane fade show active" id="result7" role="tabpanel">
+                    <div class="row">
+                      <div class="col-xl-5 col-lg-7 col-md-6">
+                        <div class="list-group"><a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" href="#">Messages<span class="badge badge-pill badge-info">14</span></a><a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" href="#">Orders<span class="badge badge-pill badge-warning">2</span></a><a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" href="#">Favourites<span class="badge badge-pill badge-danger">6</span></a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="html7" role="tabpanel">
+                    <pre class="line-numbers"><code class="lang-html">&lt;!-- Badges inside list group --&gt;
+&lt;div class=&quot;list-group&quot;&gt;
+  &lt;a href=&quot;#&quot; class=&quot;list-group-item list-group-item-action d-flex justify-content-between align-items-center&quot;&gt;
+    Messages
+    &lt;span class=&quot;badge badge-pill badge-info&quot;&gt;14&lt;/span&gt;
+  &lt;/a&gt;
+  &lt;a href=&quot;#&quot; class=&quot;list-group-item list-group-item-action d-flex justify-content-between align-items-center&quot;&gt;
+    Orders
+    &lt;span class=&quot;badge badge-pill badge-warning&quot;&gt;2&lt;/span&gt;
+  &lt;/a&gt;
+  &lt;a href=&quot;#&quot; class=&quot;list-group-item list-group-item-action d-flex justify-content-between align-items-center&quot;&gt;
+    Favourites
+    &lt;span class=&quot;badge badge-pill badge-danger&quot;&gt;6&lt;/span&gt;
+  &lt;/a&gt;
+&lt;/div&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="pug7" role="tabpanel">
+                    <pre class="line-numbers"><code class="lang-pug">// Badges inside list group
+.list-group
+  a(href=&quot;#&quot;).list-group-item.list-group-item-action.d-flex.justify-content-between.align-items-center
+    | Messages
+    span.badge.badge-pill.badge-info 14
+  a(href=&quot;#&quot;).list-group-item.list-group-item-action.d-flex.justify-content-between.align-items-center
+    | Orders
+    span.badge.badge-pill.badge-warning 2
+  a(href=&quot;#&quot;).list-group-item.list-group-item-action.d-flex.justify-content-between.align-items-center
+    | Favourites
+    span.badge.badge-pill.badge-danger 6</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <!-- Quick (anchor) navigation-->
+        <div class="col-xl-3 d-none d-xl-block pl-5">
+          <aside class="sticky-top pt-5">
+            <div class="pt-5 mt-5">
+              <div class="widget widget-links pl-4 border-left">
+                <h3 class="widget-title">Jump to</h3>
+                <ul class="widget-list">
+                  <li class="widget-list-item"><a class="widget-list-link" data-scroll href="#badge-contextual">Contextual variations</a>
+                  </li>
+                  <li class="widget-list-item"><a class="widget-list-link" data-scroll href="#badge-shadow">Badge shadow</a>
+                  </li>
+                  <li class="widget-list-item"><a class="widget-list-link" data-scroll href="#badge-pill">Pill badges</a>
+                  </li>
+                  <li class="widget-list-item"><a class="widget-list-link" data-scroll href="#badge-links">Links</a>
+                  </li>
+                  <li class="widget-list-item"><a class="widget-list-link" data-scroll href="#badge-heading">Inside heading</a>
+                  </li>
+                  <li class="widget-list-item"><a class="widget-list-link" data-scroll href="#badge-button">Inside button</a>
+                  </li>
+                  <li class="widget-list-item"><a class="widget-list-link" data-scroll href="#badge-list-group">Inside list group</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+    <!-- Back To Top Button--><a class="btn-scroll-top" href="#top" data-scroll><span class="btn-scroll-top-tooltip text-muted font-size-sm mr-2">Top</span><i class="btn-scroll-top-icon czi-arrow-up">   </i></a>
+    <!-- Vendor scrits: js libraries and plugins-->
+    <script src="../vendor/jquery/dist/jquery.slim.min.js"></script>
+    <script src="../vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../vendor/bs-custom-file-input/dist/bs-custom-file-input.min.js"></script>
+    <script src="../vendor/simplebar/dist/simplebar.min.js"></script>
+    <script src="../vendor/tiny-slider/dist/min/tiny-slider.js"></script>
+    <script src="../vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="../vendor/prismjs/components/prism-core.min.js"></script>
+    <script src="../vendor/prismjs/components/prism-markup.min.js"></script>
+    <script src="../vendor/prismjs/components/prism-clike.min.js"></script>
+    <script src="../vendor/prismjs/components/prism-javascript.min.js"></script>
+    <script src="../vendor/prismjs/components/prism-pug.min.js"></script>
+    <script src="../vendor/prismjs/plugins/toolbar/prism-toolbar.min.js"></script>
+    <script src="../vendor/prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
+    <script src="../vendor/prismjs/plugins/line-numbers/prism-line-numbers.min.js"></script>
+    <!-- Main theme script-->
+    <script src="../js/theme.min.js"></script>
+  </body>
+</html>

@@ -1,7 +1,8 @@
 from django.shortcuts import render
-
-# Create your views here.
+from restraunt.models import Restraunt
 
 
 def home(request):
-    return render(request , 'home/home.html')
+    print(request.user)
+    context = {'restraunts' : Restraunt.objects.all()}
+    return render(request , 'home/home.html' , context)
