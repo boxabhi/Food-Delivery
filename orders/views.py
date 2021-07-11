@@ -1,10 +1,11 @@
+from django import urls
 from django.shortcuts import redirect, render
 from .models import *
 from restraunt.models import *
 from django.http import HttpResponseRedirect
+from django.contrib.auth.decorators import login_required
 
-
-
+@login_required(login_url='/accounts/login/')
 def add_cart(request , menu_id):
     try:
         customer = request.user.customer

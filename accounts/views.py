@@ -1,3 +1,4 @@
+from django import contrib
 from django.conf import UserSettingsHolder
 from django.http.response import HttpResponse
 from django.shortcuts import render,redirect
@@ -157,3 +158,27 @@ def forget_password(request):
     except Exception as e:
         print(e)
     return render(request,'accounts/forgotpassword.html')
+
+
+from django.http import HttpResponseRedirect
+
+def reset_password(request , token):
+    try:
+        user_obj = Customer.objects.get(email_token = token)
+        if request.method == 'POST':
+            new_password = request.POST.get('new_password')
+            confirm_password = request.POST.get('confirm_password')
+
+            if new_password != confirm_password:
+                messages.success(request, ('Both should be same'))
+                return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
+
+            user_obj.set_password(confirm_password)
+            user_obj.save()
+            return HttpResponse("Your password changed")
+
+    except Exception as e:
+        print(e)
+        return HttpResponse('Your token is invalid')
+    
+    return render(request , 'accounts/reset-password.html')
