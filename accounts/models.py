@@ -1,3 +1,4 @@
+
 from django.db import models
 from django.contrib.auth.models import User
 from home.models import BaseModel
@@ -32,6 +33,16 @@ class Customer(User):
 
     class Meta:
         db_table = 'customer'
+    
+
+    def get_cart_count(self):
+        try:
+            cart = self.customer_cart.get(is_paid = False)
+            return cart.cart.count()
+        except Exception as e:
+            return 0
+        return 0
+
     
 
 

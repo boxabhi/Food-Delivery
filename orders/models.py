@@ -13,7 +13,7 @@ class CouponCode(BaseModel):
     
 
 class Cart(BaseModel):
-    customer = models.ForeignKey(Customer , related_name='customer_cart')
+    customer = models.ForeignKey(Customer , related_name='customer_cart' ,  on_delete=models.CASCADE)
     is_paid = models.BooleanField(default=False)
     total_price = models.IntegerField(default=0)
 

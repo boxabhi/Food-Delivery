@@ -20,8 +20,9 @@ from django.conf import settings
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from home.views import *
 urlpatterns = [
-    path('' , home),
+    path('' , include('home.urls')),
     path('accounts/' , include('accounts.urls')),
+    path('orders/' , include('orders.urls')),
     path('jet/', include('jet.urls', 'jet')),  # Django JET URLS
     path('admin/', admin.site.urls),
 ]

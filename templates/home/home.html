@@ -1,22 +1,27 @@
 {% extends "base.html" %}
 {% block start %}
 
-<div class="container">
-<div class="row  mt-5 pt-5">
-  {% for  restraunt in restraunts %}
-    <div class="col-md-3">
-        <div class="card" style="width: 18rem;">
-            <img src="/media/{{restraunt.restraunt_image}}" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">{{restraunt.restraunt_name}}</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="" class="btn btn-primary">Order Now</a>
-            </div>
-          </div>
+<section class="container py-4 py-sm-5">
+  <div class="row pt-3 pt-sm-0">
+    {% for  restraunt in restraunts %}
+    <div class="col-md-3 col-sm-6 mb-grid-gutter"><a class="card product-card h-100 border-0 box-shadow pb-2"
+        href="{% url 'restraunt_detail' restraunt.id  %}"><span
+          class="badge badge-right badge-shadow badge-success font-size-md font-weight-medium badge-shadow"
+          data-toggle="tooltip" title="" data-original-title="Average meal cost">AMC: $17.<small>00</small></span><img
+          class="card-img-top" src="/media/{{restraunt.restraunt_image}}"   alt="McDonald's">
+        <div class="bg-white rounded-lg pt-1 px-2 mx-auto mt-n5"  style="width: 150px;"><img
+          src="https://image.flaticon.com/icons/png/512/3027/3027212.png" class="d-block rounded-lg mx-auto" width="50"  alt="Brand">
+        </div>
+        <div class="card-body text-center pt-3 pb-4">
+          <h3 class="h5 mb-2">{{restraunt.restraunt_name}}</h3>
+          <div class="font-size-ms text-muted">{{restraunt.restraunt_descripton}}</div>
+        </div>
+      </a>
     </div>
     {% endfor %}
-</div>
-</div>
+  </div>
+</section>
+
 
 
 {% endblock %}

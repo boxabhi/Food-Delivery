@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block start %}
+
+<div class="container mt-5 pt-5">
+
+    <div class="row">
+        {% for menu in menus %}
+
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-grid-gutter">
+            <div class="card product-card border pb-2"><a class="d-block" href="#quick-view" data-toggle="modal">
+                    <img class="card-img-top" src="/media/{{menu.menu_image}}" alt="Pizza"></a>
+                <div class="card-body pt-1 pb-2">
+                    <h3 class="product-title font-size-md"><a href="#quick-view"
+                            data-toggle="modal">{{menu.menu_name}}</a></h3>
+                    <p class="font-size-ms text-muted">Broccoli, Mushrooms, Bell pepper, Corn, Onion, Mozzarella,
+                        Parmesan</p>
+
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="product-price"><span class="text-accent">{{menu.menu_price}}</span></div>
+                        <a href="{% url  'add_cart' menu.id %}" class="btn btn-primary btn-sm data-toggle="toast"
+                            data-target="#cart-toast">+<i class="czi-cart font-size-base ml-1"></i>
+                        
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+
+{% endblock %}
