@@ -5,5 +5,10 @@ from django.contrib import admin
 from .models import *
 
 admin.site.register(CouponCode)
-admin.site.register(Cart)
+
+
+class CartAdmin(admin.ModelAdmin):
+    list_display = ['id','customer' , 'is_paid' ,'total_price']
+    
+admin.site.register(Cart,CartAdmin)
 admin.site.register(CartItems)

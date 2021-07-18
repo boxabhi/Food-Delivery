@@ -1,0 +1,107 @@
+{% extends "base.html"  %}
+{% block start  %}
+
+
+<div class="container pt-4 pb-3 py-sm-4">
+
+  <div class="rounded-lg box-shadow-lg mt-4 mb-5">
+    <ul class="nav nav-tabs nav-justified mb-4">
+      <li class="nav-item"><a class="nav-link font-size-lg font-weight-medium py-4 active"
+          href="food-delivery-cart.html">1. Your order</a></li>
+      <li class="nav-item"><a class="nav-link font-size-lg font-weight-medium py-4"
+          href="food-delivery-checkout.html">2. Checkout</a></li>
+    </ul>
+    <div class="px-3 px-sm-4 px-xl-5 pt-1 pb-4 pb-sm-5">
+      <div class="row">
+        <!-- Items in cart-->
+        <div class="col-lg-8 col-md-7 pt-sm-2">
+          <!-- Item-->
+          {% for cart_items in carts.cart.all %}
+          <div class="d-sm-flex justify-content-between align-items-center mt-3 mb-4 pb-3 border-bottom">
+            <div class="media media-ie-fix d-block d-sm-flex align-items-center text-center text-sm-left">
+              <a class="d-inline-block mx-auto mr-sm-4" href="#" style="width: 7.5rem;"><img
+                  src="https://images.pexels.com/photos/708587/pexels-photo-708587.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                  alt="Pizza"></a>
+              <div class="media-body pt-2">
+                <h3 class="product-title font-size-base mb-2"><a href="#">{{cart_items.restraunt_menu.menu_name}}</a>
+                </h3>
+                <div class="font-size-sm"><span class="text-muted mr-2">Size:</span>Medium</div>
+                <div class="font-size-sm"><span class="text-muted mr-2">Base:</span>Standard</div>
+                <div class="font-size-lg text-accent pt-2">
+                  {{cart_items.restraunt_menu.menu_price}}
+                </div>
+              </div>
+            </div>
+            <div class="pt-2 pt-sm-0 pl-sm-3 mx-auto mx-sm-0 text-center text-sm-left" style="max-width: 9rem;">
+              <div class="form-group mb-0">
+                <label class="font-weight-medium" for="quantity1">Quantity</label>
+                <input class="form-control" type="number" id="quantity1" value="1">
+              </div>
+              <button class="btn btn-link px-0 text-danger" type="button"><i class="czi-close-circle mr-2"></i><span
+                  class="font-size-sm">Remove</span></button>
+            </div>
+          </div>
+
+          {% endfor %}
+        </div>
+        <!-- Sidebar-->
+        <div class="col-lg-4 col-md-5 pt-3 pt-sm-4">
+          <div class="rounded-lg bg-secondary px-3 px-sm-4 py-4">
+            <div class="text-center mb-4 pb-3 border-bottom">
+              <h3 class="h5 mb-3 pb-1">Total</h3>
+              <h4 class="font-weight-normal">$24.<small>00</small></h4>
+            </div>
+
+            <h3 class="h6 mb-4">Apply promo code</h3>
+            <form class="needs-validation" method="post" novalidate="">
+              <div class="form-group">
+                <input class="form-control" type="text" placeholder="Promo code" required="">
+                <div class="invalid-feedback">Please provide promo code.</div>
+              </div>
+              <button class="btn btn-outline-primary btn-block" type="submit">Apply promo code</button>
+            </form>
+            <button class="btn btn-primary btn-shadow btn-block mt-4 mb-3" id="rzp-button1"><i
+                class="czi-card font-size-lg mr-2"></i>Proceed to Checkout</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<button >Pay</button>
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script>
+  var options = {
+    "key": "{{key_id}}",
+    "amount": "{{carts.total_price}}",
+    "currency": "INR",
+
+    "order_id": "{{order_id}}",
+    "handler": function (response) {
+        console.log(response)
+        window.location.href = `/orders/payment-successfull/?razorpay_payment_id=${response.razorpay_payment_id}&razorpay_order_id=${response.razorpay_order_id}&razorpay_signature=${response.razorpay_signature}`    
+
+    },
+  };
+  var rzp1 = new Razorpay(options);
+  rzp1.on('payment.failed', function (response) {
+
+    window.location.href = '/failure/'
+
+    // alert(response.error.code);
+    // alert(response.error.description);
+    // alert(response.error.source);
+    // alert(response.error.step);
+    // alert(response.error.reason);
+    // alert(response.error.metadata.order_id);
+    // alert(response.error.metadata.payment_id);
+  });
+  document.getElementById('rzp-button1').onclick = function (e) {
+    rzp1.open();
+    e.preventDefault();
+  }
+</script>
+
+
+{% endblock %}

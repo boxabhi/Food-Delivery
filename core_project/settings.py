@@ -141,3 +141,8 @@ STATICFILES_DIR = {
 
 MEDIA_ROOT =  os.path.join(BASE_DIR, 'public/static') 
 MEDIA_URL = '/media/'
+
+
+
+KEY_ID = 'rzp_test_3vHrpwqr8zbPdH'
+KEY_SECRET = 'TOljObA3p5TVnGQ7MiYLreyN'

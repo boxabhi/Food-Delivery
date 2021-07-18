@@ -1,3 +1,4 @@
+from django.http.response import HttpResponse
 from django.shortcuts import redirect, render
 from restraunt.models import Restraunt
 
@@ -18,3 +19,9 @@ def restraunt_detail(request , slug):
     return redirect('/error/')
 
 
+
+def success(request):
+    return HttpResponse('Your payment was successfull')
+
+def failure(request):
+    return HttpResponse('Your payment was failed')
