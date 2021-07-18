@@ -6,6 +6,8 @@ from home.models import BaseModel
 
 
 
+
+
 class Shopkeeper(User):
     '''
     Shopkeeper model handling restraunt owner
@@ -50,6 +52,7 @@ class CusomerAddress(BaseModel):
     customer = models.ForeignKey(Customer , on_delete=models.CASCADE)
     address = models.TextField()
     pincode = models.CharField(max_length=100)
+    
 
 
 

@@ -5,8 +5,11 @@ from restraunt.models import *
 from django.http import HttpResponseRedirect
 from django.contrib.auth.decorators import login_required
 
+
+
 @login_required(login_url='/accounts/login/')
 def add_cart(request , menu_id):
+    print(request.user.customer)
     try:
         customer = request.user.customer
         cart_obj, _ =  Cart.objects.get_or_create(customer = customer , is_paid = False)
